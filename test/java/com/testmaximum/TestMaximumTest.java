@@ -11,6 +11,7 @@ public class TestMaximumTest {
         boolean max = (result==3.1f) ? true : false;
         Assertions.assertTrue(max);
     }
+
     
     @Test
     public void givenMaxNumber_NotAtFirstPosition_ShouldReturnFalse(){
