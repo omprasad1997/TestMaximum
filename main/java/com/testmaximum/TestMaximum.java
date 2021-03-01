@@ -16,6 +16,5 @@ public class TestMaximum {
         if(zInt.compareTo(max) > 0)
             max = zInt;
         return max;
-
     }
 }
