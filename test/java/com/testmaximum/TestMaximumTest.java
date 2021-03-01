@@ -12,6 +12,7 @@ public class TestMaximumTest {
         Assertions.assertTrue(max);
     }
 
+
     @Test
     public void givenMaxNumber_NotAtFirstPosition_ShouldReturnFalse(){
         TestMaximum userNumbers = new TestMaximum();
