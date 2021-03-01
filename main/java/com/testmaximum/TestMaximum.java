@@ -14,9 +14,9 @@ public class TestMaximum {
     }
 
     public static Float findMaximum(Float xFloat, Float yFloat, Float zFloat) {
-        Float max = xFloat;
-        if(yFloat.compareTo(max) > 0)
-            max = yFloat;
+        Float max = yFloat;
+        if(xFloat.compareTo(max) > 0)
+            max = xFloat;
         if(zFloat.compareTo(max) > 0)
             max = zFloat;
         return max;
