@@ -5,18 +5,18 @@ import org.junit.jupiter.api.Test;
 
 public class TestMaximumTest {
     @Test
-    public void givenMaxNumber_AtThirdPosition_ShouldReturnTrue(){
+    public void givenMaxNumber_AtFirstPosition_ShouldReturnTrue(){
         TestMaximum userNumbers = new TestMaximum();
-        Integer result = userNumbers.findMaximum(2,1,3);
-        boolean max = (result==3) ? true : false;
+        Float result = userNumbers.findMaximum( 3.1f,2.1f,1.1f);
+        boolean max = (result==3.1f) ? true : false;
         Assertions.assertTrue(max);
     }
     
     @Test
-    public void givenMaxNumber_NotAtThirdPosition_ShouldReturnFalse(){
+    public void givenMaxNumber_NotAtFirstPosition_ShouldReturnFalse(){
         TestMaximum userNumbers = new TestMaximum();
-        Integer result = userNumbers.findMaximum(10,20,6);
-        boolean max = (result==6) ? true : false;
+        Float result = userNumbers.findMaximum(2.1f,3.1f,1.1f);
+        boolean max = (result==2.1f) ? true : false;
         Assertions.assertFalse(max);
     }
 }
