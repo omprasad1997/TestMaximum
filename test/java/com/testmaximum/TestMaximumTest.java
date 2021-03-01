@@ -15,7 +15,7 @@ public class TestMaximumTest {
     @Test
     public void givenMaxNumber_NotAtThirdPosition_ShouldReturnFalse(){
         TestMaximum userNumbers = new TestMaximum();
-        Integer result = userNumbers.findMaximum(10,20,6);
+        Integer result = userNumbers.findMaximum(10,15,6);
         boolean max = (result==6) ? true : false;
         Assertions.assertFalse(max);
     }
