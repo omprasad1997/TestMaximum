@@ -18,7 +18,6 @@ public class TestMaximum {
             max = xString;
         if(yString.compareTo(max) > 0)
             max = yString;
-
         return max;
     }
 }
