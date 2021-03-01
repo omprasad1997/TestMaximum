@@ -1,24 +1,23 @@
 package com.testmaximum;
 
 public class TestMaximum {
-    Float xFloat,yFloat,zFloat;
+    String xString,yString,zString;
 
-    public TestMaximum(Float xFloat, Float yFloat, Float zFloat) {
-        this.xFloat = xFloat;
-        this.yFloat = yFloat;
-        this.zFloat = zFloat;
+    public TestMaximum(String xString, String yString, String zString) {
+        this.xString = xString;
+        this.yString = yString;
+        this.zString = zString;
     }
 
     public TestMaximum() {
 
     }
-
-    public static Float findMaximum(Float xFloat, Float yFloat, Float zFloat) {
-        Float max = zFloat;
-        if(xFloat.compareTo(max) > 0)
-            max = xFloat;
-        if(yFloat.compareTo(max) > 0)
-            max = yFloat;
+    public static String findMaximum(String xString, String yString, String zString) {
+        String max = xString;
+        if(yString.compareTo(max) > 0)
+            max = xString;
+        if(yString.compareTo(max) > 0)
+            max = yString;
         return max;
     }
 }
