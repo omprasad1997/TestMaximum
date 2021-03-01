@@ -13,9 +13,9 @@ public class TestMaximum {
 
     }
     public static String findMaximum(String xString, String yString, String zString) {
-        String max = xString;
-        if(yString.compareTo(max) > 0)
-            max = yString;
+        String max = yString;
+        if(xString.compareTo(max) > 0)
+            max = xString;
         if(zString.compareTo(max) > 0)
             max = zString;
 
