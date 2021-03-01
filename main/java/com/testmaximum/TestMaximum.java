@@ -14,11 +14,11 @@ public class TestMaximum {
     }
 
     public static Float findMaximum(Float xFloat, Float yFloat, Float zFloat) {
-        Float max = yFloat;
+        Float max = zFloat;
         if(xFloat.compareTo(max) > 0)
             max = xFloat;
-        if(zFloat.compareTo(max) > 0)
-            max = zFloat;
+        if(yFloat.compareTo(max) > 0)
+            max = yFloat;
         return max;
     }
 }
