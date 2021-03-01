@@ -15,9 +15,10 @@ public class TestMaximum {
     public static String findMaximum(String xString, String yString, String zString) {
         String max = xString;
         if(yString.compareTo(max) > 0)
-            max = xString;
-        if(yString.compareTo(max) > 0)
             max = yString;
+        if(zString.compareTo(max) > 0)
+            max = zString;
+
         return max;
     }
 }
