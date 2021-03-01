@@ -1,23 +1,24 @@
 package com.testmaximum;
 
-public class TestMaximum {
-    String xString,yString,zString;
+public class TestMaximum<T extends Comparable <T>>{
+    T x,y,z;
 
-    public TestMaximum(String xString, String yString, String zString) {
-        this.xString = xString;
-        this.yString = yString;
-        this.zString = zString;
+    public TestMaximum(T x, T y, T z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
     }
 
     public TestMaximum() {
 
     }
-    public static String findMaximum(String xString, String yString, String zString) {
-        String max = zString;
-        if(xString.compareTo(max) > 0)
-            max = xString;
-        if(yString.compareTo(max) > 0)
-            max = yString;
+    public static <T extends Comparable <T>> T  findMaximum(T x, T y, T z) {
+        T max = x;
+        if(y.compareTo(max) > 0)
+            max = y;
+        if(z.compareTo(max) > 0)
+            max = z;
+
         return max;
     }
 }
