@@ -13,11 +13,11 @@ public class TestMaximum {
 
     }
     public static String findMaximum(String xString, String yString, String zString) {
-        String max = yString;
+        String max = zString;
         if(xString.compareTo(max) > 0)
             max = xString;
-        if(zString.compareTo(max) > 0)
-            max = zString;
+        if(yString.compareTo(max) > 0)
+            max = yString;
 
         return max;
     }
