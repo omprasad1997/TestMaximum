@@ -11,8 +11,7 @@ public class TestMaximumTest {
         boolean max = (result==3) ? true : false;
         Assertions.assertTrue(max);
     }
-
-
+    
     @Test
     public void givenMaxNumber_NotAtFirstPosition_ShouldReturnFalse(){
         TestMaximum userNumbers = new TestMaximum();
